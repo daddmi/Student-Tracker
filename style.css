@@ -1,0 +1,144 @@
+/* GENERAL SETTINGS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f3f6fb;
+    color: #172033;
+    line-height: 1.6;
+    padding: 35px 20px;
+}
+
+header {
+    max-width: 1100px;
+    margin: 0 auto 30px;
+    padding: 35px;
+    background: #0e1d3e;
+    color: #ffffff;
+    border-radius: 18px;
+    border-bottom: 4px solid #6b8bc7;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+    letter-spacing: -1px;
+}
+
+header p {
+    font-size: 15px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+    align-items: start;
+}
+
+main section {
+    background: #ffffff;
+    padding: 25px;
+    border: 1px solid #e4eaf2;
+    border-radius: 16px;
+    box-shadow: 0 5px 18px rgba(25, 45, 80, 0.04);
+}
+
+main section h2 {
+    font-size: 17px;
+    color: #536179;
+    margin-bottom: 18px;
+    font-weight: 600;
+}
+
+#balance,
+#income,
+#expenses {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    overflow-wrap: anywhere;
+}
+
+#balance {
+    color: #1d4ed8;
+}
+
+#income {
+    color: #15803d;
+}
+
+#expenses {
+    color: #dc2626;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#form label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #344054;
+    margin-top: 5px;
+}
+
+#form input,
+#form select {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #d5deea;
+    border-radius: 9px;
+    background: #fbfcfe;
+    color: #172033;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+#form input:focus,
+#form select:focus {
+    border-color: #3978f6;
+    box-shadow: 0 0 0 3px rgba(57, 120, 246, 0.12);
+}
+
+#form button {
+    margin-top: 12px;
+    padding: 14px;
+    border: none;
+    border-radius: 9px;
+    background: #2563eb;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+#form button:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+#transactions {
+    list-style: none;
+}
+
+#transactions li {
+    padding: 15px 0;
+    border-bottom: 1px solid #edf0f5;
+    color: #344054;
+    font-size: 14px;
+    overflow-wrap: anywhere;
+}
+
+#transactions li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
